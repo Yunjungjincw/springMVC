@@ -10,8 +10,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript">
+
+	var cnt=1;
 	function file_add(){
-		$("#d_file").append("<br>"+);
+		$("#d_file").append("<br>"+"<input type='file' name='file"+cnt+"'/>");
+		cnt++;
 	}
 
 </script>
@@ -46,7 +49,7 @@
 			    
 			    <div class="form-group">      
 			      <div class="col-sm-offset-2 col-sm-10">
-			        <button type="submit" class="btn btn-default">업로드</button><br>
+			        <button type="submit" class="btn btn-primary">업로드</button><br>
 			        	<div id="d_file"></div>
 			      </div>
 			    </div>
